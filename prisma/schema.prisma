@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Task {
+  id         String    @id @default(cuid())
+  name       String
+  category   String    @default("Général")
+  subCategory String   @default("")
+  icon       String    @default("✨")
+  everyDays  Int?
+  lastDoneAt DateTime?
+  startDate  DateTime?
+  weekDays   String    @default("")
+  createdAt  DateTime  @default(now())
+  logs       TaskLog[]
+}
+
+model SubCategory {
+  id        String   @id @default(cuid())
+  name      String
+  category  String
+  icon      String   @default("etoile")
+  createdAt DateTime @default(now())
+}
+
+model TaskLog {
+  id     String   @id @default(cuid())
+  taskId String
+  doneAt DateTime @default(now())
+  task   Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([doneAt])
+}
