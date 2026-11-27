@@ -86,7 +86,7 @@ export default function Home() {
     <main className="page">
       <header className="head">
         <img src="/logo.svg" alt="" width={48} height={48} />
-        <h1>Ménage</h1>
+        <h1>Tache ménagère</h1>
       </header>
 
       {tasks.length > 0 && (

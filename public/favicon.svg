@@ -1,9 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ménage">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Tache ménagère">
   <rect width="512" height="512" rx="112" fill="#2f6b52"/>
-  <g fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M128 262L256 154L384 262"/>
-    <path d="M152 242V366a22 22 0 0 0 22 22H338a22 22 0 0 0 22-22V242"/>
-    <path d="M206 300l38 38l66-72"/>
-  </g>
-  <path d="M372 104L383 129L408 140L383 151L372 176L361 151L336 140L361 129Z" fill="#f2c14e"/>
+  <path d="M256 112L402 236V380a28 28 0 0 1-28 28H138a28 28 0 0 1-28-28V236Z" fill="#ffffff" stroke="#ffffff" stroke-width="24" stroke-linejoin="round"/>
+  <path d="M192 284l48 48l82-92" fill="none" stroke="#2f6b52" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

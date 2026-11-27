@@ -5,7 +5,7 @@ import "./globals.css";
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ménage",
+  title: "Tache ménagère",
   description: "Suivi des tâches ménagères",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
